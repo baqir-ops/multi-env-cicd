@@ -63,7 +63,7 @@ jobs:
           docker run -d \
             --name flask-app \
             --restart always \
-            -p 80:5000 \
+            -p 8080:5000 \
             -e APP_ENV=production \
             baqirops/multi-env-cicd:latest
           echo "✅ Deployed at $(date)"
